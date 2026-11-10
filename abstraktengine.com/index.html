@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>abstrakt engine — Turn any song into a living mandala</title>
+<meta name="description" content="abstrakt engine is a real-time Android music visualizer that wraps 3D geometry in audio-reactive kaleidoscope mandalas and exports them as hardware-accelerated H.264 MP4 up to 4K." />
+
+<!-- Open Graph / social -->
+<meta property="og:title" content="abstrakt engine — audio-reactive kaleidoscope visualizer" />
+<meta property="og:description" content="Turn any song into a living mandala and export it as video. Real-time visualizer · MP4 up to 4K · native Android." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="images/hero/feature_graphic.png" />
+
+<link rel="icon" type="image/png" href="images/playstore_icon.png" />
+<link rel="apple-touch-icon" href="images/playstore_icon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ============ LIVE ANNOUNCEMENT BAR ============ -->
+<div class="announce">
+  <div class="container announce__inner">
+    <span>🔥 <strong>abstrakt&nbsp;engine</strong> is now live on Google&nbsp;Play —
+      <a class="announce__link" href="https://play.google.com/store/apps/details?id=com.onojk.abstrakt" target="_blank" rel="noopener">Download it free</a>
+    </span>
+  </div>
+</div>
+
+<!-- ============ NAV ============ -->
+<header class="nav" id="top">
+  <div class="container nav__inner">
+    <a class="brand" href="index.html#top" aria-label="abstrakt engine home">
+      <img class="brand__mark" src="images/playstore_icon.png" alt="" aria-hidden="true" width="28" height="28" />
+      <span class="brand__name">abstrakt&nbsp;engine</span>
+    </a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#export">Export</a>
+      <a href="index.html#motion">Demos</a>
+      <a href="index.html#get" class="nav__cta">Get it</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <p class="eyebrow reveal">Native Android · up&nbsp;to&nbsp;120&nbsp;Hz · OpenGL ES 3.0</p>
+    <h1 class="hero__title reveal">Turn any song into a living mandala —<br /><span class="grad">and export it as video.</span></h1>
+    <p class="hero__sub reveal">Real-time audio visualizer · kaleidoscope mandalas · hardware MP4 up to 4K.</p>
+    <p class="hero__body reveal">abstrakt&nbsp;engine wraps 3D geometry in audio-reactive textures, folds them into kaleidoscope mandalas, and captures the result as an H.264 MP4 with your audio already muxed in — entirely on your device.</p>
+    <div class="hero__cta reveal">
+      <a href="https://play.google.com/store/apps/details?id=com.onojk.abstrakt" class="btn btn--primary" target="_blank" rel="noopener">Get it on Google&nbsp;Play</a>
+      <a href="index.html#motion" class="btn btn--ghost">▶ Watch it in motion</a>
+    </div>
+    <div class="hero__art reveal">
+      <img class="hero__feature" src="images/hero/feature_graphic.png" alt="abstrakt engine feature graphic — a glowing kaleidoscope mandala" loading="eager" />
+      <img class="hero__xr" src="images/hero/xr_1.png" alt="abstrakt engine running, audio-reactive visuals" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ SEE IT IN MOTION ============ -->
+<section class="section" id="motion">
+  <div class="container">
+    <h2 class="section__title">See it in motion</h2>
+    <p class="section__lede">Captured live on a Galaxy&nbsp;S25 with original Suno-generated music. Every frame is the actual app responding to audio in real time — no post-processing.</p>
+
+    <!-- PRIMARY demo — lazy click-to-play, privacy-friendly (youtube-nocookie), no iframe until clicked -->
+    <div class="yt-lite reveal" data-id="xTa7JNNjmf0" data-title="abstrakt engine — Pressure Becomes Groove">
+      <button class="yt-lite__play" type="button" aria-label="Play the abstrakt engine demo video">▶</button>
+    </div>
+
+    <h3 class="motion__more">More demos</h3>
+    <div class="videos">
+      <a class="video-card" href="https://www.youtube.com/watch?v=Mv3p7AFTOwg" target="_blank" rel="noopener">
+        <div class="video-card__thumb" data-yt="Mv3p7AFTOwg"></div>
+        <div class="video-card__meta">
+          <span class="video-card__title">Nimbus Window</span>
+          <span class="video-card__tag">6:18 · ambient</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="section section--alt" id="features">
+  <div class="container">
+    <h2 class="section__title">Built to react to sound</h2>
+    <p class="section__lede">Pick an audio file or tap the mic, choose a skin, and watch a rotating 3D shape painted with shader color or your own photo — folded into a radially symmetric mandala that pulses on every beat.</p>
+    <div class="grid grid--features">
+      <article class="card reveal">
+        <div class="card__icon">◉</div>
+        <h3>Audio-reactive 3D geometry</h3>
+        <p>Cylinder and sphere rotate in real time, each tuned to fill the frame. Beat-driven shake on X/Y, with four ribbons that collapse to bass, mid, treble and overall level.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon">▦</div>
+        <h3>Painter textures</h3>
+        <p>A 4096×256 texture painted stripe-by-stripe every revolution — hue stripe, audio paint, print head, or a photo you supply.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon">✦</div>
+        <h3>Kaleido instrument</h3>
+        <p>Fold 2–24 ways (Mirror, Hex, Star…), lock 4-fold Diamond/Square symmetry, choose from eight SDF frame shapes, and tune beat sensitivity live.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon">🎙</div>
+        <h3>Live mic input</h3>
+        <p>Tap the mic to drive the visuals from the room around you instead of a file — playback pauses and resumes automatically.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon">⬛</div>
+        <h3>Make your own skins</h3>
+        <p>Capture a mosaic from any moment, preview the 8×8 grid, keep it — now it's a reusable audio-reactive skin. 5 built-in plus up to 10 of your own.</p>
+      </article>
+      <article class="card reveal">
+        <div class="card__icon">🔒</div>
+        <h3>Private by design</h3>
+        <p>Runs entirely on-device. No accounts, no sign-in — your audio, photos, skins and exports never leave your phone.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MP4 EXPORT ============ -->
+<section class="section" id="export">
+  <div class="container">
+    <h2 class="section__title">Export a real MP4. Up&nbsp;to&nbsp;4K. Hardware-fast.</h2>
+    <p class="section__lede">Tap ↓ → Export Wizard. abstrakt engine renders offline at the live framerate, then muxes your audio track. On a Galaxy&nbsp;S25, 4K runs at <strong>4–5× real-time</strong>.</p>
+
+    <ol class="steps">
+      <li class="step reveal">
+        <img src="images/features/export_choose_mode.png" alt="Export wizard — Choose mode: Cyclone and Skins 1–5" />
+        <div class="step__body"><span class="step__n">1</span><h3>Choose your mode</h3><p>Pick the visual — Cyclone, or any of your built-in and custom skins.</p></div>
+      </li>
+      <li class="step reveal">
+        <img src="images/features/export_audio_source.png" alt="Export wizard — Audio source: use current song, pick a different song, or no audio" />
+        <div class="step__body"><span class="step__n">2</span><h3>Set the audio source</h3><p>Use the loaded song, pick a different track, or export a silent video.</p></div>
+      </li>
+      <li class="step reveal">
+        <img src="images/features/export_resolution.png" alt="Export wizard — Resolution: 720p, 1080p (recommended), or 4K" />
+        <div class="step__body"><span class="step__n">3</span><h3>Choose resolution</h3><p>720p, 1080p, or 4K — each labeled with its file-size and speed trade-off.</p></div>
+      </li>
+      <li class="step reveal">
+        <img src="images/features/export_start.png" alt="Export wizard — Kaleido settings review with size estimate and Start Export" />
+        <div class="step__body"><span class="step__n">4</span><h3>Review &amp; start</h3><p>Confirm shape, fold count and frame, check the size estimate, then tap Start Export — it renders offline, muxes your audio, and lands in your Gallery.</p></div>
+      </li>
+    </ol>
+
+    <div class="exporttable reveal">
+      <table>
+        <thead><tr><th>Resolution</th><th>Pixels</th><th>Bitrate</th><th>Best for</th></tr></thead>
+        <tbody>
+          <tr><td>720p</td><td>1280 × 720</td><td>8 Mbps</td><td>Small file, fast export</td></tr>
+          <tr class="is-rec"><td>1080p <span class="pill">recommended</span></td><td>1920 × 1080</td><td>16 Mbps</td><td>The everyday default</td></tr>
+          <tr><td>4K</td><td>3840 × 2160</td><td>80 Mbps</td><td>Large file (~100 MB/min), max detail</td></tr>
+        </tbody>
+      </table>
+      <p class="exporttable__foot">H.264 High profile · VBR, short I-frame interval · AAC 192&nbsp;kbps · decodes AAC, MP3, WAV, FLAC.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CUSTOM SKINS BAND ============ -->
+<section class="section section--alt band" id="skins">
+  <div class="container band__inner">
+    <div class="band__text reveal">
+      <h2 class="section__title">Your photos become instruments</h2>
+      <p>Open <strong>Add a Skin</strong> and take a photo, pick one from your gallery, or capture a mosaic straight from the live visualizer — there's a Random Mosaic too. Each one becomes a full audio-reactive skin you can swipe to at any time: up to 10 custom skins per device, alongside the 5 built in.</p>
+    </div>
+    <div class="band__img reveal">
+      <img src="images/features/add_skin_picker.png" alt="Custom skin picker — capture a mosaic into an 8×8 grid" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHONE SHOWCASE ============ -->
+<section class="section" id="gallery">
+  <div class="container">
+    <h2 class="section__title">On the device</h2>
+    <p class="section__lede">Real screens from real exports.</p>
+    <div class="phones reveal">
+      <img src="images/phone/phone_1.png" alt="abstrakt engine screenshot 1" />
+      <img src="images/phone/phone_2.png" alt="abstrakt engine screenshot 2" />
+      <img src="images/phone/phone_3.png" alt="abstrakt engine screenshot 3" />
+      <img src="images/phone/phone_4.png" alt="abstrakt engine screenshot 4" />
+      <img src="images/phone/phone_5.png" alt="abstrakt engine screenshot 5" />
+      <img src="images/phone/phone_6.png" alt="abstrakt engine screenshot 6" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ RUNS EVERYWHERE ============ -->
+<section class="section section--alt" id="devices">
+  <div class="container">
+    <h2 class="section__title">Runs everywhere Android does</h2>
+    <p class="section__lede">Built for Android 13+ — phones, tablets, and Chromebooks.</p>
+    <div class="devices reveal">
+      <figure><img src="images/phone/phone_1.png" alt="On a phone" /><figcaption>Phone</figcaption></figure>
+      <figure><img src="images/devices/tablet10_4.png" alt="abstrakt engine running on a 10-inch tablet" /><figcaption>Tablet</figcaption></figure>
+      <figure><img src="images/devices/chromebook_1.png" alt="abstrakt engine running on a Chromebook" /><figcaption>Chromebook</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING & PRIVACY ============ -->
+<section class="section" id="pricing">
+  <div class="container price__inner">
+    <div class="price__card reveal">
+      <h2 class="section__title">Free. With an honest upgrade.</h2>
+      <ul class="price__list">
+        <li><strong>Free</strong>, supported by ads — a banner during use and one short interstitial after each export.</li>
+        <li><strong>$2.99 one-time</strong> removes all ads, forever.</li>
+        <li>No subscriptions, no recurring charges, no upsells.</li>
+        <li>Anonymous crash reports only — opt out in Settings&nbsp;→&nbsp;Privacy.</li>
+      </ul>
+      <a href="https://play.google.com/store/apps/details?id=com.onojk.abstrakt" class="btn btn--primary" target="_blank" rel="noopener">Get it on Google&nbsp;Play</a>
+    </div>
+    <div class="price__img reveal">
+      <img src="images/features/settings_iap.png" alt="In-app Support the developer screen showing the $2.99 ad-removal purchase" />
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOWNLOAD CTA ============ -->
+<section class="get" id="get">
+  <div class="get__glow" aria-hidden="true"></div>
+  <div class="container get__inner reveal">
+    <img class="get__icon" src="images/playstore_icon.png" alt="abstrakt engine app icon" />
+    <h2>Now live on Google&nbsp;Play</h2>
+    <p>abstrakt&nbsp;engine is out now on Android — download it free, then go ad-free anytime with a one-time $2.99 unlock.</p>
+    <div class="get__cta">
+      <a class="btn btn--primary btn--lg" href="https://play.google.com/store/apps/details?id=com.onojk.abstrakt" target="_blank" rel="noopener">Get it on Google&nbsp;Play</a>
+      <a class="btn btn--ghost btn--lg" href="https://github.com/onojk/abstrakt-engine" target="_blank" rel="noopener">★ Star on GitHub</a>
+    </div>
+    <p class="get__pkg"><code>com.onojk.abstrakt</code></p>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="brand__name">abstrakt&nbsp;engine</span>
+      <p>A native Android kaleidoscope visualizer with hardware MP4 export. Part of the abstrakt trilogy.</p>
+    </div>
+    <nav class="footer__links" aria-label="Footer">
+      <a href="https://onojk.github.io/abstrakt-engine/privacy.html" target="_blank" rel="noopener">Privacy Policy</a>
+      <a href="mailto:onojk123@gmail.com">Support</a>
+      <a href="https://github.com/onojk/abstrakt-engine" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/onojk/abstrakt" target="_blank" rel="noopener">abstrakt (Python)</a>
+      <a href="https://github.com/onojk/abstrakt-deck" target="_blank" rel="noopener">abstrakt-deck (Rust)</a>
+    </nav>
+  </div>
+  <div class="container footer__bottom">
+    <span>© 2026 abstrakt engine · com.onojk.abstrakt</span>
+    <span>Built with Claude Code</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
